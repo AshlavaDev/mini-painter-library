@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react'
+import PaintCard from './components/PaintCard';
 import supabase from './supabaseClient';
 
 function App() {
@@ -33,15 +34,17 @@ function App() {
       <h1 className='text-center text-4xl'>React App Paint Library</h1>
       {fetchError && (<h4 className="text-center text-2xl text-green-800">{fetchError}</h4>)}
         {paints && (
-          <div className="text-center text-lg">
-            <h2 className="text-2xl">Paints</h2>
+          <div>
+            <h2 className="text-2xl text-center ">Paints</h2>
+            <div className='flex gap-4 flex-wrap justify-center'>
             {paints.map(paint => (
-              <p>{paint.paint_name}</p>
+              <PaintCard {...paint} />
             ))}
+            </div>
           </div>
         )}
     </div>
   )
 }
 
-export default App
+export default App;

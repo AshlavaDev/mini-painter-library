@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TopNav from './components/TopNav';
+import About from './pages/About';
+import Companies from './pages/Companies';
 import Home from './pages/Home';
 import supabase from './supabaseClient';
 
@@ -35,6 +37,8 @@ function App() {
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/companies" element={<Companies />} />
       </Routes>
     </div>
   )

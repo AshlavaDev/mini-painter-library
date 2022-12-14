@@ -1,6 +1,7 @@
-
-import { useEffect, useState } from 'react'
-import PaintCard from './components/PaintCard';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TopNav from './components/TopNav';
+import Home from './pages/Home';
 import supabase from './supabaseClient';
 
 function App() {
@@ -31,18 +32,10 @@ function App() {
   
   return (
     <div>
-      <h1 className='text-center text-4xl'>React App Paint Library</h1>
-      {fetchError && (<h4 className="text-center text-2xl text-green-800">{fetchError}</h4>)}
-        {paints && (
-          <div>
-            <h2 className="text-2xl text-center ">Paints</h2>
-            <div className='flex gap-4 flex-wrap justify-center'>
-            {paints.map(paint => (
-              <PaintCard {...paint} />
-            ))}
-            </div>
-          </div>
-        )}
+      <TopNav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   )
 }

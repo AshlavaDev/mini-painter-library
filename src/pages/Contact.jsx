@@ -1,16 +1,15 @@
 import PageHeader from "../components/PageHeader";
 
-function About() {
-
+function Contact(){
   const pageInfo = {
-    name: 'About',
-    tagline: 'The Mission of The Paint Atheneum'
+    name: 'Contact Us',
+    tagline: 'How to get in touch'
   }
+
 
   return (
     <PageHeader {...pageInfo} />
   )
 }
 
-export default About;
-
+export default Contact;

@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TopNav from './components/TopNav';
 import About from './pages/About';
 import Companies from './pages/Companies';
+import GamesWorkshop from './pages/companies/GamesWorkshop';
+import Vallejo from './pages/companies/Vallejo';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
+import News from './pages/News';
 import supabase from './supabaseClient';
 
 function App() {
@@ -37,8 +41,13 @@ function App() {
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/companies" element={<Companies />} />
+        <Route path="/about" element={<About />} />
+        <Route path='/news' element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+
+        <Route path="/companies/gamesworkshop" element={<GamesWorkshop />} />
+        <Route path="/companies/vallejo" element={<Vallejo />} />
       </Routes>
     </div>
   )

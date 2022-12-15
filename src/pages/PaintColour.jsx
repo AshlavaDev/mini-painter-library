@@ -9,7 +9,6 @@ function PaintColour() {
   return (
     <div>
       <PageHeader {...pageInfo} />
-      
     </div>
   )
 }

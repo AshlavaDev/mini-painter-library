@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TheFooter from './components/TheFooter';
-import TopNav from './components/TopNav';
+import TopNav from './components/navigation/TopNav';
+import TheFooter from './components/navigation/TheFooter';
 import About from './pages/About';
 import Companies from './pages/Companies';
 import GamesWorkshop from './pages/companies/GamesWorkshop';

@@ -1,6 +1,6 @@
 import supabase from "./../../supabaseClient"
 import { useEffect, useState } from "react";
-import PageHeader from "../../components/PageHeader";
+import PageHeader from "../../components/headers/PageHeader";
 import PaintList from "../../components/PaintList";
 
 function GamesWorkshop() {
@@ -9,15 +9,16 @@ function GamesWorkshop() {
     tagline: 'British'
   }
 
-
+  
   const[fetchError, setError] = useState(null);
   const [paints, setPaints] = useState(null);
 
   useEffect(() => {
     const fetchPaints = async () => {
       let { data: citadel_air, error } = await supabase
-        .from('citadel_air')
+        .from('citadel')
         .select()
+        .eq('range', 'Dry')
   
       if (error) {
         setError('Could not GET paints');
@@ -34,7 +35,7 @@ function GamesWorkshop() {
     fetchPaints();
   }, [])
 
-
+  
   return (
     <div>
       <PageHeader {...pageInfo} />

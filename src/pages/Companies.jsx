@@ -11,8 +11,12 @@ function Companies() {
     <div>
       <PageHeader {...pageInfo} />
       
-      <Link to='/companies/gamesworkshop'>Games Workshop</Link>
-      <Link to='/companies/vallejo'>Vallejo</Link>
+      <div className="flex gap-4 justify-center py-5">
+        <Link to='/companies/gamesworkshop' className="font-sans text-xl md:text-3xl py-2 px-3 border border-darkblue dark:border-offwhite rounded
+        bg-darkblue dark:bg-offwhite text-offwhite dark:text-darkblue hover:bg-offwhite hover:dark:bg-darkblue hover:text-darkblue hover:dark:text-offwhite ">Games Workshop</Link>
+        <Link to='/companies/vallejo' className="font-sans text-xl md:text-3xl py-2 px-3 border border-darkblue dark:border-offwhite rounded
+        bg-darkblue dark:bg-offwhite text-offwhite dark:text-darkblue hover:bg-offwhite hover:dark:bg-darkblue hover:text-darkblue hover:dark:text-offwhite ">Vallejo</Link>
+      </div>
     </div>
   )
 

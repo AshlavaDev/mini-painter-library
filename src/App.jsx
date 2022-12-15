@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TheFooter from './components/TheFooter';
 import TopNav from './components/TopNav';
@@ -10,33 +9,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import News from './pages/News';
 import PaintColour from './pages/PaintColour';
-import supabase from './supabaseClient';
 
 function App() {
-
-  const[fetchError, setError] = useState(null);
-  const [paints, setPaints] = useState(null);
-
-  useEffect(() => {
-    const fetchPaints = async () => {
-      let { data: citadel_air, error } = await supabase
-        .from('citadel_air')
-        .select()
-  
-      if (error) {
-        setError('Could not GET paints');
-        setPaints(null);
-        console.log(error);
-      }
-  
-      if (citadel_air) {
-        setPaints(citadel_air);
-        setError(null);
-      }
-    }
-  
-    fetchPaints();
-  }, [])
   
   return (
     <div className="bg-offwhite dark:bg-darkblue flex flex-col justify-between min-h-screen">

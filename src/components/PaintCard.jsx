@@ -8,7 +8,7 @@ function PaintCard(paint) {
 
 
   return (
-    <div className="flex flex-col justify-between gap-2 max-w-xs w-1/5 h-96 border-2 border-black py-4 px-3 rounded">
+    <div className="flex flex-col justify-between gap-2 max-w-xs w-1/5 h-96 border-2 border-black py-4 px-3 rounded bg-offwhite">
       <div className="w-3/5 h-2/5 border border-black rounded self-center" style={colour}>
 
       </div>
@@ -17,7 +17,7 @@ function PaintCard(paint) {
         <p>Colour: {paint.colour_category}</p>
         <p>Paint Type: {paint.type}</p>
       </div>
-      <a href={paint.link_url} target="_blank" className="self-center px-2 py-1 rounded block bg-slate-400 ">Find in Store</a>
+      <a href={paint.link_url} target="_blank" className="self-center px-2 py-1 rounded block bg-darkblue border border-darkblue text-offwhite hover:bg-offwhite hover:text-darkblue ">Find in Store</a>
     </div>
   )
 }

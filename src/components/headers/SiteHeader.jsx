@@ -1,7 +1,7 @@
 function SiteHeader() {
 
   return (
-    <section className="bg-dark-hero bg-no-repeat bg-center bg-cover text-darkblue opacity-80">
+    <section className="bg-dark-hero bg-no-repeat bg-center bg-cover text-darkblue opacity-90">
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center bg-golden py-8 px-5 rounded-3xl ">
           <h1 className="text-4xl font-display sm:text-6xl">

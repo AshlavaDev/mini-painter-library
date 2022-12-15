@@ -2,49 +2,48 @@ import supabase from "./../../supabaseClient"
 import { useEffect, useState } from "react";
 import PageHeader from "../../components/headers/PageHeader";
 import PaintList from "../../components/lists/PaintList";
+import ChooseRange from "../../components/lists/ChooseRange";
 
 function GamesWorkshop() {
   const pageInfo = {
-    name: 'Games Workshop',
-    tagline: 'British'
+    name: 'Citadel - Games Workshop',
+    tagline: 'British',
+    range: ['Air', 'Base', 'Dry', 'Layer', 'Spray', 'Contrast', 'Shade']
   }
-
-  
-  const[fetchError, setError] = useState(null);
+ 
+  const [fetchError, setError] = useState(null);
   const [paints, setPaints] = useState(null);
 
-  useEffect(() => {
-    const fetchPaints = async () => {
-      let { data: citadel_air, error } = await supabase
-        .from('citadel')
-        .select()
-        .eq('range', 'Dry')
-  
-      if (error) {
-        setError('Could not GET paints');
-        setPaints(null);
-        console.log(error);
-      }
-  
-      if (citadel_air) {
-        setPaints(citadel_air);
-        setError(null);
-      }
+  const fetchPaints = async (range) => {
+    console.log(range);
+    let { data, error } = await supabase
+      .from('citadel')
+      .select()
+      .eq('range', range)
+    
+    if (error) {
+      setError('Could not GET paints');
+      setPaints(null);
+      console.log(error);
     }
-  
-    fetchPaints();
-  }, [])
-
-  
+    
+    if (data) {
+      setPaints(data);
+      setError(null);
+    }
+  }
+    
   return (
     <div>
       <PageHeader {...pageInfo} />
+      <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
       <div>
-        {fetchError && (<p>{fetchError}</p>)}
+        {fetchError && (<FetchError fetchError={fetchError} />)}
         {paints && (
           <PaintList paints={paints} />
         )}
-      </div>
+        </div>
+
     </div>
   )
 }

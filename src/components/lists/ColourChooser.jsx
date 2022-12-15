@@ -1,8 +1,8 @@
-import ColourChooseButton from "./ColourChooseButton";
+import ColourChooseButton from "../buttons/ColourChooseButton";
 
-function ColourChooser() {
+function ColourChooser({fetchPaints}) {
   const colours = ['White', 'Black', 'Blue', 'Bone', 'Brass', 'Bronze', 'Brown', 'Copper', 'Flesh',
-    'Gold', 'Green', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Silver', 'Turquoise', 'Yellow']
+    'Gold', 'Green', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Silver', 'Turquoise', 'Yellow'];
 
   return (
     <div className="py-6 flex justify-center">
@@ -12,7 +12,7 @@ function ColourChooser() {
         {colours && (
           <div className="flex flex-wrap justify-center gap-4 font-sans">
             {colours.map(colour =>(
-              <ColourChooseButton colour={colour} />
+              <ColourChooseButton fetchPaints={fetchPaints} colour={colour}/>
             ))}
           </div>
         )}

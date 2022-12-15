@@ -1,4 +1,4 @@
-function ColourChooseButton({colour}){
+function ColourChooseButton({fetchPaints, colour}){
 
   return (
     <div>
@@ -8,6 +8,7 @@ function ColourChooseButton({colour}){
         value={colour}
         id={colour}
         className="peer hidden"
+        onClick={() => fetchPaints(colour.toLowerCase())}
       />
 
       <label

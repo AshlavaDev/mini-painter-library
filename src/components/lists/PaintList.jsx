@@ -1,4 +1,4 @@
-import PaintCard from "./PaintCard";
+import PaintCard from "../layout/PaintCard";
 
 function PaintList({paints}) {
 

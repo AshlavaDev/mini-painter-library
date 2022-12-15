@@ -1,7 +1,7 @@
 import supabase from "./../../supabaseClient"
 import { useEffect, useState } from "react";
 import PageHeader from "../../components/headers/PageHeader";
-import PaintList from "../../components/PaintList";
+import PaintList from "../../components/lists/PaintList";
 
 function GamesWorkshop() {
   const pageInfo = {

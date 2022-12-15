@@ -1,6 +1,9 @@
 import { useState } from "react";
-import ColourChooser from "../components/ColourChooser";
+import ColourChooser from "../components/lists/ColourChooser";
+import FetchError from "../components/layout/FetchError";
 import PageHeader from "../components/headers/PageHeader";
+import PaintList from "../components/lists/PaintList";
+import supabase from "../supabaseClient";
 
 function PaintColour() {
   const pageInfo = {
@@ -8,16 +11,41 @@ function PaintColour() {
     tagline: 'Paints from all companies arranged by colour'
   }
 
-  const [colour, setColour] = useState(null);
+  const [fetchError, setError] = useState(null);
+  const [paints, setPaints] = useState(null);
 
-  const getColourChoice = () => {
+  const fetchPaints = async (colour) => {
 
+    let { data, error } = await supabase
+      .from('master')
+      .select()
+      .eq('colour_category', colour)
+    
+    if (error) {
+      setError('Could not GET paints');
+      setPaints(null);
+      console.log(error);
+    }
+    
+    if (data) {
+      setPaints(data);
+      setError(null);
+    }
   }
+  
+
+  
 
   return (
     <div>
       <PageHeader {...pageInfo} />
-      <ColourChooser />
+      <ColourChooser fetchPaints={fetchPaints} />
+      <div>
+        {fetchError && (<FetchError fetchError={fetchError} />)}
+        {paints && (
+          <PaintList paints={paints} />
+        )}
+        </div>
     </div>
   )
 }

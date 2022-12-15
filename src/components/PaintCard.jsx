@@ -8,7 +8,7 @@ function PaintCard(paint) {
 
 
   return (
-    <div className="flex flex-col justify-between gap-2 max-w-xs w-1/5 h-96 border-2 border-black py-4 px-3 rounded bg-offwhite">
+    <div className="flex flex-col justify-between gap-2 max-w-xs w-1/5 h-96 border-2 border-black py-4 px-3 rounded bg-offwhite hover:shadow-xl hover:shadow-golden/70">
       <div className="w-3/5 h-2/5 border border-black rounded self-center" style={colour}>
 
       </div>

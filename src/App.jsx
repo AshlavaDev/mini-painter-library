@@ -37,7 +37,7 @@ function App() {
   }, [])
   
   return (
-    <div>
+    <div class="bg-offwhite dark:bg-darkblue">
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />

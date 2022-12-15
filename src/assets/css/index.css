@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Forum";
+  src: url("./../fonts/Forum-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto-Sans-Japanese";
+  src: url("./../fonts/NotoSansJP-Regular.otf");
+}
+
+@font-face {
+  font-family: "Playfair-Display";
+  src: url("./../fonts/PlayfairDisplaySC-Regular.ttf")
+}

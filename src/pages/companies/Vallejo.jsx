@@ -8,7 +8,7 @@ import SideNav from "../../components/navigation/SideNav";
 function Vallejo() {
   const pageInfo = {
     name: 'Vallejo',
-    tagline: 'Spanish',
+    tagline: 'A big paint company',
     range: ['Model Color']
   }
 
@@ -39,7 +39,9 @@ function Vallejo() {
       <PageHeader {...pageInfo} />
       <div className="flex">
         <SideNav />
-        <section className="flex-grow">
+        <section className="flex-grow flex flex-col items-center">
+          <h2 className="font-serif text-3xl md:text-6xl text-darkblue text-center py-5">Vallejo</h2>
+          <img src="/assets/logos/logovallejo.jpg" width="150px" height="85" alt="Vallejo Logo"/>
           <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
           <div>
             {fetchError && (<FetchError fetchError={fetchError} />)}

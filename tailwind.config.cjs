@@ -10,7 +10,10 @@ module.exports = {
     extend: {
       colors: {
         'darkblue': '#05386B',
+        /*
         'offwhite': '#edf5e1',
+        */
+        'offwhite': '#fed5b7',
         'golden': '#c6a53e',
         'neogreen': '#5cdb95'
       }

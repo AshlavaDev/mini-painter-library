@@ -8,7 +8,7 @@ import SideNav from "../../components/navigation/SideNav";
 function GamesWorkshop() {
   const pageInfo = {
     name: 'Citadel - Games Workshop',
-    tagline: 'British',
+    tagline: 'The Biggest Company in Miniatures',
     range: ['Air', 'Base', 'Dry', 'Layer', 'Spray', 'Contrast', 'Shade']
   }
  
@@ -39,7 +39,9 @@ function GamesWorkshop() {
       <PageHeader {...pageInfo} />
       <div className="flex">
         <SideNav />
-        <section className="flex-grow">
+        <section className="flex-grow flex flex-col items-center">
+          <h2 className="font-serif text-3xl md:text-6xl text-darkblue text-center py-3">Games Workshop</h2>
+          <img src="/assets/logos/gwlogo.png" width="150px" height="85" alt="Games Workshop Logo"/>
           <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
           <div>
             {fetchError && (<FetchError fetchError={fetchError} />)}

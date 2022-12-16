@@ -30,22 +30,22 @@ function TopNav() {
               </svg>
             </div>
             <div className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
-              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/" onClick={() => setIsNavOpen(false)}>
                 Home
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/about">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/about" onClick={() => setIsNavOpen(false)}>
                 About
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/companies">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/companies" onClick={() => setIsNavOpen(false)}>
                 Companies
               </Link>            
-              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/paintcolour">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/paintcolour" onClick={() => setIsNavOpen(false)}>
                 Colours
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/news">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/news" onClick={() => setIsNavOpen(false)}>
                 News
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/contact">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/contact" onClick={() => setIsNavOpen(false)}>
                 Contact
               </Link>
             </div>

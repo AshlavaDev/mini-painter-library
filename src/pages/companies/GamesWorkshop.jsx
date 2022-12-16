@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import PageHeader from "../../components/headers/PageHeader";
 import PaintList from "../../components/lists/PaintList";
 import ChooseRange from "../../components/lists/ChooseRange";
+import SideNav from "../../components/navigation/SideNav";
 
 function GamesWorkshop() {
   const pageInfo = {

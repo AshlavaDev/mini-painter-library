@@ -15,17 +15,17 @@ function App() {
   return (
     <div className="bg-offwhite dark:bg-darkblue flex flex-col justify-between min-h-screen">
       <TopNav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/companies" element={<Companies />} />
-        <Route path="/paintcolour" element={<PaintColour />} />
-        <Route path="/about" element={<About />} />
-        <Route path='/news' element={<News />} />
-        <Route path="/contact" element={<Contact />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/companies" element={<Companies />} />
+          <Route path="/paintcolour" element={<PaintColour />} />
+          <Route path="/about" element={<About />} />
+          <Route path='/news' element={<News />} />
+          <Route path="/contact" element={<Contact />} />
 
-        <Route path="/companies/gamesworkshop" element={<GamesWorkshop />} />
-        <Route path="/companies/vallejo" element={<Vallejo />} />
-      </Routes>
+          <Route path="/companies/gamesworkshop" element={<GamesWorkshop />} />
+          <Route path="/companies/vallejo" element={<Vallejo />} />
+        </Routes>
       <TheFooter />
     </div>
   )

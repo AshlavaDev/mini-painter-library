@@ -4,6 +4,7 @@ import FetchError from "../components/layout/FetchError";
 import PageHeader from "../components/headers/PageHeader";
 import PaintList from "../components/lists/PaintList";
 import supabase from "../supabaseClient";
+import SideNav from "../components/navigation/SideNav";
 
 function PaintColour() {
   const pageInfo = {
@@ -39,13 +40,18 @@ function PaintColour() {
   return (
     <div>
       <PageHeader {...pageInfo} />
-      <ColourChooser fetchPaints={fetchPaints} />
-      <div>
-        {fetchError && (<FetchError fetchError={fetchError} />)}
-        {paints && (
-          <PaintList paints={paints} />
-        )}
-        </div>
+      <div className="flex">
+        <SideNav />
+        <section className="flex-grow">
+          <ColourChooser brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
+          <div>
+            {fetchError && (<FetchError fetchError={fetchError} />)}
+            {paints && (
+              <PaintList paints={paints} />
+            )}
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import PageHeader from "../components/headers/PageHeader"
+import SideNav from "../components/navigation/SideNav";
 
 function News() {
   const pageInfo = {
@@ -7,7 +8,15 @@ function News() {
   }
 
   return (
-    <PageHeader {...pageInfo} />
+    <div>
+      <PageHeader {...pageInfo} />
+      <div className="flex">
+        <SideNav />
+        <section className="flex-grow max-w-3/5">
+          
+        </section>
+      </div>
+    </div>      
   )
 }
 

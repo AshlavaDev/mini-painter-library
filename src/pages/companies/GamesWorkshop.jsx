@@ -36,14 +36,18 @@ function GamesWorkshop() {
   return (
     <div>
       <PageHeader {...pageInfo} />
-      <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
-      <div>
-        {fetchError && (<FetchError fetchError={fetchError} />)}
-        {paints && (
-          <PaintList paints={paints} />
-        )}
-        </div>
-
+      <div className="flex">
+        <SideNav />
+        <section className="flex-grow">
+          <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
+          <div>
+            {fetchError && (<FetchError fetchError={fetchError} />)}
+            {paints && (
+              <PaintList paints={paints} />
+            )}
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

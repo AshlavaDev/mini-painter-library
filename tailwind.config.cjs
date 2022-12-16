@@ -26,5 +26,6 @@ module.exports = {
       'multi-hero': "url('./src/assets/images/sampler-background.jpg')"
     }
   },
-  plugins: [],
+  plugins: [
+  ],
 }

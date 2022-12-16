@@ -1,4 +1,5 @@
 import PageHeader from "../components/headers/PageHeader";
+import SideNav from "../components/navigation/SideNav";
 
 function About() {
 
@@ -8,7 +9,15 @@ function About() {
   }
 
   return (
-    <PageHeader {...pageInfo} />
+    <div>
+      <PageHeader {...pageInfo} />
+      <div className="flex">
+        <SideNav />
+        <section className="flex-grow">
+          
+        </section>
+      </div>
+    </div>
   )
 }
 

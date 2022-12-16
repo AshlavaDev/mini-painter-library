@@ -3,6 +3,7 @@ import PageHeader from "../../components/headers/PageHeader";
 import ChooseRange from "../../components/lists/ChooseRange";
 import PaintList from "../../components/lists/PaintList";
 import supabase from "../../supabaseClient";
+import SideNav from "../../components/navigation/SideNav";
 
 function Vallejo() {
   const pageInfo = {
@@ -36,14 +37,19 @@ function Vallejo() {
   return (
     <div>
       <PageHeader {...pageInfo} />
-      <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
-      <div>
-        {fetchError && (<FetchError fetchError={fetchError} />)}
-        {paints && (
-          <PaintList paints={paints} />
-        )}
-        </div>
-  </div>
+      <div className="flex">
+        <SideNav />
+        <section className="flex-grow">
+          <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
+          <div>
+            {fetchError && (<FetchError fetchError={fetchError} />)}
+            {paints && (
+              <PaintList paints={paints} />
+            )}
+          </div>
+        </section>
+      </div>
+    </div>
   )
 }
 

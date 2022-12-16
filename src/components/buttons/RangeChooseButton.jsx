@@ -14,7 +14,7 @@ function RangeChooseButton({range, fetchPaints}) {
       <label
         for={range}
         className="flex cursor-pointer items-center justify-center rounded-md border border-darkblue py-2 px-3
-          bg-darkblue dark:bg-offwhite text-offwhite dark:text-darkblue 
+          bg-darkblue text-offwhite 
           peer-checked:bg-offwhite peer-checked:text-darkblue"
         >
           <p className="text-sm md:text-lg">{range}</p>

@@ -17,7 +17,7 @@ function SiteHeader() {
               Find Colours
             </Link>
 
-            <Link to="/companies" className="block w-full rounded border border-darkblue px-12 py-3 font-sans text-darkblue hover:text-offwhite hover:bg-darkblue focus:outline-none focus:ring active:bg-darkblue sm:w-auto"
+            <Link to="/companies" className="block w-full rounded border border-darkblue px-12 py-3 font-sans text-darkblue hover:bg-offwhite focus:outline-none focus:ring active:bg-darkblue sm:w-auto"
             >
               Find Companies
             </Link>

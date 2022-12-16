@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         'darkblue': '#05386B',
         'offwhite': '#edf5e1',
-        'golden': '#c6a53e'
+        'golden': '#c6a53e',
+        'neogreen': '#5cdb95'
       }
     },
     fontFamily: {

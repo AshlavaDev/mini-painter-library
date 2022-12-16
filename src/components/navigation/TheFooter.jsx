@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function TheFooter() {
 
   return (
-    <footer aria-label="Site Footer" className="mt-auto border-t-4 border-darkblue dark:border-golden">
+    <footer aria-label="Site Footer" className="mt-auto border-t-4 border-darkblue dark:border-neogreen">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between text-darkblue dark:text-offwhite">
           <Link to="/" className="font-display text-xl md:text-3xl ">The Paint Atheneum</Link>

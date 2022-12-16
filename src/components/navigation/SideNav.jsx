@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function SideNav() {
 
   return (
-    <div className="max-w-1/5 h-screen sticky top-0 border-r-4 dark:border-golden border-darkblue hidden md:block">
-      <div className="px-2 py-6 flex flex-col justify-between text-darkblue dark:text-offwhite font-sans">
+    <div className="max-w-1/5 h-screen sticky top-0 border-r-4 dark:bg-neogreen  dark:border-neogreen border-darkblue hidden md:block">
+      <div className="px-2 py-6 flex flex-col justify-between text-darkblue font-sans">
         <span className="block w-32 h-10 rounded-lg"></span>
         <h4 className="text-lg md:text-xl">Menu</h4>
         <nav className="flex flex-col mt-6 space-y-1">

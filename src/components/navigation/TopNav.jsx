@@ -5,32 +5,8 @@ function TopNav() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-/*
-  <Link to="/" className="font-display text-xl md:text-2xl">The Paint Atheneum</Link>
-
-  <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
-                  Home
-                </Link>
-                <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
-                  About
-                </Link>
-                <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
-                  Companies
-                </Link>            
-                <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
-                  Colours
-                </Link>
-                <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
-                  News
-                </Link>
-                <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
-                  Contact
-                </Link>
-
-className="text-darkblue dark:text-offwhite border-b-4 border-darkblue dark:border-golden */
-
   return (
-    <header className="flex items-center justify-around py-8 px-4 text-darkblue dark:text-offwhite border-b-4 border-darkblue dark:border-golden bg-offwhite dark:bg-darkblue font-serif">
+    <header className="flex items-center justify-around py-8 px-4 text-darkblue dark:text-offwhite border-b-4 border-darkblue dark:border-neogreen bg-offwhite dark:bg-darkblue font-serif">
       <Link to="/" className="font-display text-2xl md:text-4xl">The Paint Atheneum</Link>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -54,22 +30,22 @@ className="text-darkblue dark:text-offwhite border-b-4 border-darkblue dark:bord
               </svg>
             </div>
             <div className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
+              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
                 Home
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
+              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
                 About
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
+              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
                 Companies
               </Link>            
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
+              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
                 Colours
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
+              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
                 News
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
+              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
                 Contact
               </Link>
             </div>
@@ -77,22 +53,22 @@ className="text-darkblue dark:text-offwhite border-b-4 border-darkblue dark:bord
         </section>
 
         <div className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
             Home
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
             About
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
             Companies
           </Link>            
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
             Colours
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
             News
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-golden hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
             Contact
           </Link>
         </div>

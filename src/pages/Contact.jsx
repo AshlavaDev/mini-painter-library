@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import PageHeader from "../components/headers/PageHeader";
 import SideNav from "../components/navigation/SideNav";
 
@@ -14,7 +15,7 @@ function Contact(){
       <div className="flex">
         <SideNav />
         <section className="flex-grow">
-          
+          <ContactForm />
         </section>
       </div>
     </div>

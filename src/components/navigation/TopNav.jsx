@@ -6,7 +6,7 @@ function TopNav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-around py-8 px-4 text-darkblue dark:text-offwhite border-b-4 border-darkblue dark:border-neogreen bg-offwhite dark:bg-darkblue font-serif">
+    <header className="flex items-center justify-around py-8 px-4 text-darkblue  border-b-4 border-darkblue  bg-offwhite font-serif">
       <Link to="/" className="font-display text-2xl md:text-4xl">The Paint Atheneum</Link>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -20,32 +20,32 @@ function TopNav() {
 
           </div>
 
-          <div className={isNavOpen ? "showMenuNav bg-offwhite dark:bg-darkblue" : "hideMenuNav"}>
+          <div className={isNavOpen ? "showMenuNav bg-offwhite " : "hideMenuNav"}>
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)} 
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 bg-offwhite dark:bg-darkblue ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 bg-offwhite  ">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </div>
             <div className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/">
                 Home
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/about">
                 About
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/companies">
                 Companies
               </Link>            
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/paintcolour">
                 Colours
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/news">
                 News
               </Link>
-              <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/contact">
                 Contact
               </Link>
             </div>
@@ -53,22 +53,22 @@ function TopNav() {
         </section>
 
         <div className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/">
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/">
             Home
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/about">
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/about">
             About
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/companies">
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/companies">
             Companies
           </Link>            
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/paintcolour">
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/paintcolour">
             Colours
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/news">
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/news">
             News
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/contact">
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/contact">
             Contact
           </Link>
         </div>

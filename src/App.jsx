@@ -13,7 +13,7 @@ import PaintColour from './pages/PaintColour';
 function App() {
   
   return (
-    <div className="bg-offwhite dark:bg-darkblue flex flex-col justify-between min-h-screen">
+    <div className="bg-offwhite flex flex-col justify-between min-h-screen">
       <TopNav />
         <Routes>
           <Route path="/" element={<Home />} />

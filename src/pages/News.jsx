@@ -42,7 +42,7 @@ function News() {
       <div className="flex">
         <SideNav />
         <section className="flex-grow max-w-3/5">
-          <h2 className="font-serif text-2xl md:text-4xl text-darkblue dark:text-offwhite text-center py-5">Latest News</h2>
+          <h2 className="font-serif text-2xl md:text-4xl text-darkblue text-center py-5">Latest News</h2>
           {fetchError && (<FetchError fetchError={fetchError} />)}
           {news && (
             <NewsPosts news={news} />

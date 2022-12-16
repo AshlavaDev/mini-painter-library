@@ -19,7 +19,7 @@ function ContactForm() {
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:border-neogreen focus:outline-none" id="exampleInput7"
+              focus:text-gray-700 focus:bg-white focus:border-neogreen focus:outline-none" name="name"
               placeholder="Name"/>
           </div>
           <div className="form-group mb-6">
@@ -38,8 +38,8 @@ function ContactForm() {
               transition
               ease-in-out
               m-0
-              focus:text-darkblue focus:bg-white focus:border-neogreen focus:outline-none
-            " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+              focus:text-darkblue focus:bg-white focus:border-neogreen focus:outline-none" 
+              name="message" rows="3" placeholder="Message"></textarea>
           </div>
           <button type="submit" className="
             w-full

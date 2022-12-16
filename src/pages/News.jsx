@@ -41,7 +41,7 @@ function News() {
       <PageHeader {...pageInfo} />
       <div className="flex">
         <SideNav />
-        <section className="flex-grow max-w-3/5">
+        <section className="flex-grow max-w-3/5 px-3">
           <h2 className="font-serif text-2xl md:text-4xl text-darkblue text-center py-5">Latest News</h2>
           {fetchError && (<FetchError fetchError={fetchError} />)}
           {news && (

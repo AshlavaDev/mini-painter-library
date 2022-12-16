@@ -13,7 +13,7 @@ function About() {
       <PageHeader {...pageInfo} />
       <div className="flex">
         <SideNav />
-          <section className="flex-grow flex flex-col items-center gap-4 py-6 px-10 ">
+          <section className="flex-grow flex flex-col items-center gap-4 py-6 px-8">
             <div className="max-w-prose flex flex-col gap-3">
               <h4 className="font-serif text-2xl md:text-4xl text-darkblue  py-2">All Your Paints, In One Place</h4>
               <p className="font-sans text-ls md:text-xl text-darkblue ">

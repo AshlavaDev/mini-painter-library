@@ -14,7 +14,7 @@ function Companies() {
       <PageHeader {...pageInfo} />
       <div className="flex">
        <SideNav />
-       <section className="flex-grow">
+       <section className="flex-grow px-3">
         <div className="flex gap-4 justify-center py-5">
           <Link to='/companies/gamesworkshop' className="font-sans text-xl md:text-3xl py-2 px-3 border border-darkblue rounded
           bg-darkblue  text-offwhite  hover:bg-offwhite  hover:text-darkblue ">Games Workshop</Link>

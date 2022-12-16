@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: "Forum";
-  src: url("/public/assets/fonts/Forum-Regular.ttf");
+  src: url("/assets/fonts/Forum-Regular.ttf");
 }
 
 @font-face {
   font-family: "Noto-Sans-Japanese";
-  src: url("/public/assets/fonts/NotoSansJP-Regular.otf");
+  src: url("/assets/fonts/NotoSansJP-Regular.otf");
 }
 
 @font-face {
   font-family: "Playfair-Display";
-  src: url("/public/assets/fonts/PlayfairDisplaySC-Regular.ttf")
+  src: url("/assets/fonts/PlayfairDisplaySC-Regular.ttf")
 }

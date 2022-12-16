@@ -53,22 +53,22 @@ function TopNav() {
         </section>
 
         <div className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/">
             Home
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/about">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/about">
             About
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/companies">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/companies">
             Companies
           </Link>            
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/paintcolour">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/paintcolour">
             Colours
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/news">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/news">
             News
           </Link>
-          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-lg px-2 py-1" to="/contact">
+          <Link className="hover:bg-darkblue hover:text-offwhite hover:dark:bg-neogreen hover:dark:text-darkblue transition text-xl px-2 py-1" to="/contact">
             Contact
           </Link>
         </div>

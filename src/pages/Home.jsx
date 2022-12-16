@@ -10,7 +10,7 @@ function Home () {
       <div className="flex">
        <SideNav />
        <section className="flex-grow">
-        <h2>The Paint Library</h2>
+        <h2 className="font-serif text-2xl md:text-4xl text-darkblue dark:text-offwhite text-center py-5">The Paint Library</h2>
        </section>
       </div>
     </div>

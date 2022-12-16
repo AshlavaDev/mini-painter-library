@@ -21,12 +21,11 @@ module.exports = {
       'serif': ['Playfair-Display', ...defaultTheme.fontFamily.serif]
     },
     backgroundImage: {
-      'dark-hero': "url('./src/assets/images/darker-background.jpg')",
-      'light-hero': "url('./src/assets/images/lighter-background.jpg')",
-      'water-hero': "url('./src/assets/images/watery-background.jpg')",
-      'multi-hero': "url('./src/assets/images/sampler-background.jpg')"
+      'darkhero': "url('./src/assets/images/darker-background.jpg')",
+      'lighthero': "url('./src/assets/images/lighter-background.jpg')",
+      'waterhero': "url('./src/assets/images/watery-background.jpg')",
+      'multihero': "url('./src/assets/images/sampler-background.jpg')"
     }
   },
-  plugins: [
-  ],
+  plugins: [],
 }

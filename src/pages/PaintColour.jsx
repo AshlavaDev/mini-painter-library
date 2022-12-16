@@ -39,7 +39,7 @@ function PaintColour() {
       <PageHeader {...pageInfo} />
       <div className="flex">
         <SideNav />
-        <section className="flex-grow">
+        <section className="flex-grow flex flex-col items-center">
           <ColourChooser brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
           <div>
             {fetchError && (<FetchError fetchError={fetchError} />)}

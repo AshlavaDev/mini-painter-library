@@ -13,8 +13,8 @@ function ContactForm() {
               text-base
               font-normal
               text-darkblue
-              bg-offwhite bg-clip-padding
-              border border-solid border-gray-300
+              bg-white bg-clip-padding
+              border border-solid border-darkblue
               rounded
               transition
               ease-in-out
@@ -33,7 +33,7 @@ function ContactForm() {
               font-normal
               text-darkblue
               bg-white bg-clip-padding
-              border border-solid border-gray-300
+              border border-solid border-darkblue
               rounded
               transition
               ease-in-out
@@ -46,14 +46,14 @@ function ContactForm() {
             px-6
             py-2.5
             bg-darkblue 
-            text-offwhite dark:text-darkblue
+            text-offwhite
             font-medium
             text-xs
             leading-tight
             uppercase
             rounded
             shadow-md
-            hover:bg-offwhite hover:shadow-lg
+            hover:bg-offwhite hover:shadow-lg hover:text-darkblue hover:border hover:border-darkblue focus:border focus:border-neogreen focus:text-darkblue
             focus:bg-offwhite  focus:shadow-lg focus:outline-none focus:ring-0
             active:bg-darkblue active:shadow-lg
             transition

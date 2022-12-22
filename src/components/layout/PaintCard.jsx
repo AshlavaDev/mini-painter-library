@@ -8,12 +8,12 @@ function PaintCard(paint) {
 
 
   return (
-    <div className="flex flex-col justify-between gap-2 w-1/4 min-w-full md:min-w-0 h-96 border-2 border-black py-4 px-3 rounded-lg bg-red-100 hover:shadow-2xl hover:shadow-slate-800 font-sans text-sm md:text-base">
+    <div className="flex flex-col justify-between gap-2 min-w-full h-96 border-2 border-black py-4 px-3 rounded-lg bg-red-100 hover:shadow-2xl hover:shadow-slate-800 font-sans text-sm md:text-base">
       <div className="w-2/5 h-2/5 border border-black rounded self-center" style={colour}>
-
+        {/* This div is a box for paint colours */}
       </div>
       <h4 className="tmt-4 text-lg md:text-xl">{paint.paint_name}</h4>
-      <div className="flex flex-col gap-1 items-start mt-2 max-w-sm">
+      <div className="flex flex-col gap-1 items-start mt-2">
         <p>Company: {paint.company}</p>
         <p>Range: {paint.range}</p>
         <p>Colour: {paint.colour_category}</p>

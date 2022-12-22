@@ -9,7 +9,7 @@ function Vallejo() {
   const pageInfo = {
     name: 'Vallejo',
     tagline: 'A big paint company',
-    range: ['Model Color']
+    range: ['Model Color', 'Game Color']
   }
 
   const [fetchError, setError] = useState(null);

@@ -1,4 +1,5 @@
 import TypeChooseButton from "../buttons/TypeChooseButton";
+import { v4 as uuidv4 } from 'uuid';
 
 function TypeChooser({fetchPaints}) {
   const types = ['Acrylic', 'Acrylic Ink', 'Air', 'Contrast', 'Special', 'Spray', 'Wash'];
@@ -11,7 +12,7 @@ function TypeChooser({fetchPaints}) {
         {types && (
           <div className="flex flex-wrap justify-center gap-4 font-sans">
             {types.map(type =>(
-              <TypeChooseButton fetchPaints={fetchPaints} type={type}/>
+              <TypeChooseButton key={uuidv4} fetchPaints={fetchPaints} type={type}/>
             ))}
           </div>
         )}

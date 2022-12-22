@@ -12,7 +12,7 @@ function ColourChooseButton({fetchPaints, colour}){
       />
 
       <label
-        for={colour}
+        htmlFor={colour}
         className="flex cursor-pointer items-center justify-center rounded-md border border-darkblue py-2 px-3
           bg-darkblue  text-offwhite 
           peer-checked:bg-offwhite peer-checked:text-darkblue"

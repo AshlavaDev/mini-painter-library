@@ -1,4 +1,5 @@
 import ColourChooseButton from "../buttons/ColourChooseButton";
+import { v4 as uuidv4 } from 'uuid';
 
 function ColourChooser({fetchPaints}) {
   const colours = ['White', 'Black', 'Blue', 'Bone', 'Brass', 'Bronze', 'Brown', 'Copper', 'Flesh',
@@ -12,7 +13,7 @@ function ColourChooser({fetchPaints}) {
         {colours && (
           <div className="flex flex-wrap justify-center gap-4 font-sans">
             {colours.map(colour =>(
-              <ColourChooseButton fetchPaints={fetchPaints} colour={colour}/>
+              <ColourChooseButton key={uuidv4} fetchPaints={fetchPaints} colour={colour}/>
             ))}
           </div>
         )}

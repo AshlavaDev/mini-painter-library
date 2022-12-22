@@ -1,12 +1,13 @@
 function ContactForm() {
 
   return (
-    <section className="mb-32 mt-12 text-center text-darkblue font-sans">
+    <section className="mb-32 mt-12 text-center text-darkblue font-sans text-lg md:text-xl">
       <div className="max-w-[1/2] mx-auto px-3 lg:px-6">
         <h2 className="text-3xl font-serif mb-12">Contact us</h2>
-        <form name="contact" method="POST" className="w-full">
+        <form name="contact" method="POST" className="w-full" netlify>
           <div className="form-group mb-6 w-full">
-            <input type="text" className="form-control block
+            <label htmlFor="name" className="pb-2">Name</label>
+            <input type="text" className="form-control block 
               w-full
               px-3
               py-1.5
@@ -19,10 +20,13 @@ function ContactForm() {
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:border-neogreen focus:outline-none" name="name"
+              focus:text-gray-700 focus:bg-white focus:border-neogreen focus:outline-none"
+              name="name"
+              id="name"
               placeholder="Name"/>
           </div>
           <div className="form-group mb-6">
+            <label htmlFor="message" className="pb-2">Message</label>
             <textarea className="
               form-control
               block
@@ -39,7 +43,9 @@ function ContactForm() {
               ease-in-out
               m-0
               focus:text-darkblue focus:bg-white focus:border-neogreen focus:outline-none" 
-              name="message" rows="3" placeholder="Message"></textarea>
+              name="message"
+              id="message"
+              rows="3" placeholder="Message"></textarea>
           </div>
           <button type="submit" className="
             w-full

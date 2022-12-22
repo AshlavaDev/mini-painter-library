@@ -1,4 +1,5 @@
 import RangeChooseButton from "../buttons/RangeChooseButton";
+import { v4 as uuidv4 } from 'uuid';
 
 function ChooseRange({brand, rangeNames, fetchPaints}) {
   const ranges = rangeNames;
@@ -11,7 +12,7 @@ function ChooseRange({brand, rangeNames, fetchPaints}) {
         {ranges && (
           <div className="flex flex-wrap justify-center gap-4 font-sans">
             {ranges.map(range =>(
-              <RangeChooseButton range={range} fetchPaints={fetchPaints}/>
+              <RangeChooseButton key={uuidv4} range={range} fetchPaints={fetchPaints}/>
             ))}
           </div>
         )}

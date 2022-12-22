@@ -8,5 +8,21 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- For Netlify to get the form -->
+    <form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" 
+        name="name"
+        id="name"
+        placeholder="Name"
+      />
+      <textarea 
+        name="message"
+        id="message"
+        rows="3" placeholder="Message">
+      </textarea>
+    </form>
+
+
   </body>
 </html>

@@ -4,7 +4,8 @@ function ContactForm() {
     <section className="mb-32 mt-12 text-center text-darkblue font-sans text-lg md:text-xl">
       <div className="max-w-[1/2] mx-auto px-3 lg:px-6">
         <h2 className="text-3xl font-serif mb-12">Contact us</h2>
-        <form name="contact" method="POST" className="w-full" netlify>
+        <form name="contact" method="POST" className="w-full">
+        <input type="hidden" name="form-name" value="contact" />
           <div className="form-group mb-6 w-full">
             <label htmlFor="name" className="pb-2">Name</label>
             <input type="text" className="form-control block 

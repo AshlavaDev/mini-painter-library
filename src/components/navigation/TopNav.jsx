@@ -42,6 +42,9 @@ function TopNav() {
               <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/paintcolour" onClick={() => setIsNavOpen(false)}>
                 Colours
               </Link>
+              <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/painttype" onClick={() => setIsNavOpen(false)}>
+                Types
+              </Link>
               <Link className="hover:bg-darkblue hover:text-offwhite transition text-lg px-2 py-1" to="/news" onClick={() => setIsNavOpen(false)}>
                 News
               </Link>
@@ -64,6 +67,9 @@ function TopNav() {
           </Link>            
           <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/paintcolour">
             Colours
+          </Link>
+          <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/painttype">
+            Types
           </Link>
           <Link className="hover:bg-darkblue hover:text-offwhite transition text-xl px-2 py-1" to="/news">
             News

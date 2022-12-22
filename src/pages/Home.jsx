@@ -15,7 +15,7 @@ function Home () {
         className="text-neogreen hover:text-golden">Kofi.</a></p>
         <h3 className="font-sans text-xl md:text-2xl text-darkblue text-center py-5 underline">Roadmap for the site</h3>
         <ul >
-          <li className="text-lg py-1 text-darkblue ">Add Vallejo Game Colour</li>
+          <li className="text-lg py-1 text-darkblue line-through">Add Vallejo Game Colour</li>
           <li className="text-lg py-1 text-darkblue ">Add Vallejo Model Air</li>
           <li className="text-lg py-1 text-darkblue ">Add Vallejo Game Air</li>
           <li className="text-lg py-1 text-darkblue ">Add Vallejo's new Xpress Colour</li>

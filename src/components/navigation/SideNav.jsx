@@ -22,6 +22,7 @@ function SideNav() {
               <nav className="my-1 ml-6 flex flex-col gap-1">
                 <Link to="/companies" className="text-sm hover:bg-darkblue  hover:text-offwhite ">By Company</Link>
                 <Link to="/paintcolour" className="text-sm hover:bg-darkblue  hover:text-offwhite ">By Colour</Link>
+                <Link to="/painttype" className="text-sm hover:bg-darkblue  hover:text-offwhite ">By Type</Link>
               </nav>
             </details>
             <Link to="/news" className="ml-2 pl-1 text-sm md:text-lg hover:bg-darkblue  hover:text-offwhite " >News</Link>

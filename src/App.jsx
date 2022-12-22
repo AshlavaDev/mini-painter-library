@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import News from './pages/News';
 import PaintColour from './pages/PaintColour';
+import PaintType from './pages/PaintType';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/companies" element={<Companies />} />
           <Route path="/paintcolour" element={<PaintColour />} />
+          <Route path="/painttype" element={<PaintType />} />
           <Route path="/about" element={<About />} />
           <Route path='/news' element={<News />} />
           <Route path="/contact" element={<Contact />} />

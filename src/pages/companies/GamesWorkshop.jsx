@@ -43,7 +43,7 @@ function GamesWorkshop() {
           <h2 className="font-serif text-3xl md:text-6xl text-darkblue text-center py-3">Games Workshop</h2>
           <img src="/assets/logos/gwlogo.png" width="150px" height="85" alt="Games Workshop Logo"/>
           <ChooseRange brand={pageInfo.name} rangeNames={pageInfo.range} fetchPaints={fetchPaints} />
-          <div>
+          <div className="w-[80%]">
             {fetchError && (<FetchError fetchError={fetchError} />)}
             {paints && (
               <PaintList paints={paints} />

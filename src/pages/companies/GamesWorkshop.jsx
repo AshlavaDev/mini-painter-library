@@ -9,7 +9,7 @@ function GamesWorkshop() {
   const pageInfo = {
     name: 'Citadel - Games Workshop',
     tagline: 'The Biggest Company in Miniatures',
-    range: ['Air', 'Base', 'Dry', 'Layer', 'Spray', 'Contrast', 'Shade']
+    range: ['Air', 'Base', 'Contrast', 'Dry', 'Layer', 'Shade', 'Spray']
   }
  
   const [fetchError, setError] = useState(null);

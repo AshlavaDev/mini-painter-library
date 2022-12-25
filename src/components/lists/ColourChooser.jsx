@@ -2,8 +2,8 @@ import ColourChooseButton from "../buttons/ColourChooseButton";
 import { v4 as uuidv4 } from 'uuid';
 
 function ColourChooser({fetchPaints}) {
-  const colours = ['White', 'Black', 'Blue', 'Bone', 'Brass', 'Bronze', 'Brown', 'Copper', 'Flesh',
-    'Gold', 'Green', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Silver', 'Turquoise', 'Yellow'];
+  const colours = ['Black', 'Blue', 'Bone', 'Brass', 'Bronze', 'Brown', 'Copper', 'Flesh',
+    'Gold', 'Green', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Silver', 'Turquoise', 'White', 'Yellow'];
 
   return (
     <div className="py-6 flex justify-center max-w-2xl">
